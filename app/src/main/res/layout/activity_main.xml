@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button1"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="1관"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="2관"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button3"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="3관"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button4"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="4관"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button5"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="5관"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button6"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="6관"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button7"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="7관"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button8"
+            android:layout_marginTop="-6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_button"
+            android:text="8관"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/bar"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="울산"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:gravity="center"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/run1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="1관 143석"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/run1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run1"
+                    android:visibility="visible"
+                    android:src="@drawable/first_run"/>
+
+                <Button
+                    android:id="@+id/first_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="1관으로 이동" />
+                <TextView
+                    android:id="@+id/run2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="2관 137석"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/run2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run2"
+                    android:visibility="invisible"
+                    android:src="@drawable/second_run"/>
+
+                <Button
+                    android:id="@+id/second_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="2관으로 이동" />
+
+                <TextView
+                    android:id="@+id/run3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="COMFORT 3관 90석"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/run3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run3"
+                    android:visibility="invisible"
+                    android:src="@drawable/third_run"/>
+                <Button
+                    android:id="@+id/third_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="3관으로 이동" />
+                <TextView
+                    android:id="@+id/run4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="4관 143석"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/run4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run4"
+                    android:visibility="invisible"
+                    android:src="@drawable/first_run"/>
+                <Button
+                    android:id="@+id/fourth_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="4관으로 이동" />
+
+                <TextView
+                    android:id="@+id/run5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="5관 137석"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/run5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run5"
+                    android:visibility="invisible"
+                    android:src="@drawable/second_run"/>
+                <Button
+                    android:id="@+id/fifth_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="5관으로 이동" />
+
+                <TextView
+                    android:id="@+id/run6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="COMFORT 6관 90석"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/run6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run6"
+                    android:visibility="invisible"
+                    android:src="@drawable/third_run"/>
+                <Button
+                    android:id="@+id/sixth_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="6관으로 이동" />
+
+                <TextView
+                    android:id="@+id/run7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="7관 143석"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:id="@+id/run7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run7"
+                    android:visibility="invisible"
+                    android:src="@drawable/first_run"/>
+                <Button
+                    android:id="@+id/seventh_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="7관으로 이동" />
+
+                <TextView
+                    android:id="@+id/run8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:text="8관 258석"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/run8_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/run8"
+                    android:src="@drawable/eighth_run"
+                    android:visibility="invisible" />
+                <Button
+                    android:id="@+id/eighth_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    android:background="#42224A"
+                    android:textColor="@color/white"
+                    android:text="8관으로 이동" />
+
+            </RelativeLayout>
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/caution1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/caution"/>
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
